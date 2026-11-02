@@ -122,8 +122,7 @@ def _is_sep_row(line: str) -> bool:
 def classify_heading(level: int, text: str, hid: str | None, line: int) -> Block:
     m = RE_APPENDIX.match(text)
     if m and level == 1:
-        return Block("heading", line, dict(cls="appendix", level=1, text=m.group(2).strip(),
-                                           mode=(m.group(1) or "").lower() or None, id=hid))
+        return Block("heading", line, dict(cls="appendix", level=1, text=m.group(2).strip(), id=hid))
     key = re.sub(r"\s+", " ", text.strip().rstrip(".").lower())
     if key in C.STRUCT_ALIASES:
         if level != 1:

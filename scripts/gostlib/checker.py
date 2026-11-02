@@ -487,21 +487,6 @@ class Checker:
         want = list(C.APPENDIX_LETTERS[:len(letters)])
         if letters and letters != want:
             self.f.append(Finding(ERR, "S06", f"буквы приложений {letters}, ожидается {want} (без Ё, З, Й, О, Ч, Ь, Ы, Ъ)", "документ", ""))
-        body_text = " ".join(clean(i.text) for i in self.items if i.kind in ("body", "list", "cell"))
-        for k, it in enumerate(structs):
-            if it.kind != "appendix":
-                continue
-            raw = it.text
-            nxt = " ".join(clean(self.items[j].text) for j in range(it.idx, min(it.idx + 3, len(self.items))))
-            kind_txt = clean(raw) + " " + nxt
-            mand = "(обязательное)" in kind_txt
-            ref = re.search(r"приложени\w*\s+%s\b" % it.meta["letter"], body_text, re.I)
-            if "(обязательное)" not in kind_txt and "(справочное)" not in kind_txt:
-                self.add(ERR, "S07", "в заголовке приложения нет пометки «(обязательное)» или «(справочное)»", it)
-            elif mand and not ref:
-                self.add(WARN, "S08", f"приложение {it.meta['letter']} обязательное, но в тексте на него нет ссылки", it)
-            elif ref and not mand:
-                self.add(WARN, "S08", f"на приложение {it.meta['letter']} есть ссылка в тексте – оно должно быть «обязательное»", it)
         self._check_special_sections()
 
     def _unit_texts(self, name):

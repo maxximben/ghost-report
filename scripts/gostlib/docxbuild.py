@@ -254,13 +254,6 @@ class Builder:
                 elif ri >= di:
                     self.err(self.blocks[di].line, f"ссылка на {'рисунок' if kind == 'fig' else 'таблицу'} «{i}» стоит после неё: "
                                                    f"по правилам ссылка должна быть в тексте ДО рисунка/таблицы")
-        # приложения: обязательное/справочное
-        for bi, h in self.heads.items():
-            if h.cls == "appendix":
-                d = self.blocks[bi].data
-                if not d.get("mode"):
-                    d["mode"] = "обязательное" if (d.get("id") and ("app", d["id"]) in self.first_ref) else "справочное"
-
         # нумерация источников
         used = [self.sources[s] for s in self.cite_order if s in self.sources]
         self.sorted_sources = bib.sort_sources(used)
@@ -641,8 +634,6 @@ class Builder:
             par = self.doc.add_paragraph(style="Структурный заголовок")
             par.paragraph_format.space_before = Pt(0)
             par.add_run(f"{C.APPENDIX} {h.number}")
-            par.add_run().add_break(WD_BREAK.LINE)
-            par.add_run(f"({d['mode']})")
             par.add_run().add_break(WD_BREAK.LINE)
             title = normalize_spans(list(self.spans(h.title, b.line)), self.typo, False)
             self._runs(par, title, line=b.line)
