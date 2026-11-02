@@ -1,0 +1,126 @@
+[
+  {
+    "id": "stinson",
+    "type": "book",
+    "authors": [
+      "Stinson D. R."
+    ],
+    "title": "Cryptography: Theory and Practice",
+    "edition": "3rd ed.",
+    "city": "Boca Raton",
+    "publisher": "Chapman & Hall/CRC",
+    "year": 2005,
+    "pages": 593,
+    "isbn": "978-1-58488-508-5"
+  },
+  {
+    "id": "hac",
+    "type": "book",
+    "authors": [
+      "Menezes A. J.",
+      "van Oorschot P. C.",
+      "Vanstone S. A."
+    ],
+    "title": "Handbook of Applied Cryptography",
+    "city": "Boca Raton",
+    "publisher": "CRC Press",
+    "year": 1996,
+    "isbn": "0-8493-8523-7"
+  },
+  {
+    "id": "cormen",
+    "type": "book",
+    "authors": [
+      "Кормен Т. Х.",
+      "Лейзерсон Ч. И.",
+      "Ривест Р. Л.",
+      "Штайн К."
+    ],
+    "title": "Алгоритмы: построение и анализ",
+    "edition": "3-е изд.",
+    "city": "Москва",
+    "publisher": "Вильямс",
+    "year": 2013
+  },
+  {
+    "id": "knuth",
+    "type": "book",
+    "authors": [
+      "Кнут Д. Э."
+    ],
+    "title": "Искусство программирования. Т. 2. Получисленные алгоритмы",
+    "edition": "3-е изд.",
+    "city": "Москва",
+    "publisher": "Вильямс",
+    "year": 2007
+  },
+  {
+    "id": "rsa",
+    "type": "article",
+    "authors": [
+      "Rivest R. L.",
+      "Shamir A.",
+      "Adleman L."
+    ],
+    "title": "A method for obtaining digital signatures and public-key cryptosystems",
+    "journal": "Communications of the ACM",
+    "year": 1978,
+    "volume": 21,
+    "issue": 2,
+    "pages": "120-126",
+    "doi": "10.1145/359340.359342"
+  },
+  {
+    "id": "shannon",
+    "type": "article",
+    "authors": [
+      "Shannon C. E."
+    ],
+    "title": "Communication theory of secrecy systems",
+    "journal": "Bell System Technical Journal",
+    "year": 1949,
+    "volume": 28,
+    "issue": 4,
+    "pages": "656-715"
+  },
+  {
+    "id": "dh",
+    "type": "article",
+    "authors": [
+      "Diffie W.",
+      "Hellman M. E."
+    ],
+    "title": "New directions in cryptography",
+    "journal": "IEEE Transactions on Information Theory",
+    "year": 1976,
+    "volume": 22,
+    "issue": 6,
+    "pages": "644-654"
+  },
+  {
+    "id": "gost34",
+    "type": "standard",
+    "number": "ГОСТ Р 34.12-2015",
+    "title": "Информационная технология. Криптографическая защита информации. Блочные шифры",
+    "kind": "нац. стандарт Российской Федерации",
+    "city": "Москва",
+    "publisher": "Стандартинформ",
+    "year": 2015
+  },
+  {
+    "id": "pydoc",
+    "type": "web",
+    "title": "math – Mathematical functions",
+    "site": "Python documentation",
+    "url": "https://docs.python.org/3/library/math.html",
+    "accessed": "02.11.2026"
+  },
+  {
+    "id": "mpl",
+    "type": "web",
+    "title": "Matplotlib documentation",
+    "kind": "офиц. сайт",
+    "url": "https://matplotlib.org/stable/index.html",
+    "accessed": "02.11.2026"
+  }
+]

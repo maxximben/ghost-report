@@ -1,0 +1,64 @@
+[
+  {
+    "id": "samarsky",
+    "type": "book",
+    "authors": [
+      "Самарский А. А.",
+      "Гулин А. В."
+    ],
+    "title": "Численные методы",
+    "subtitle": "учеб. пособие для вузов",
+    "city": "Москва",
+    "publisher": "Наука",
+    "year": 1989,
+    "pages": 432
+  },
+  {
+    "id": "bakhvalov",
+    "type": "book",
+    "authors": [
+      "Бахвалов Н. С.",
+      "Жидков Н. П.",
+      "Кобельков Г. М."
+    ],
+    "title": "Численные методы",
+    "edition": "7-е изд.",
+    "city": "Москва",
+    "publisher": "БИНОМ. Лаборатория знаний",
+    "year": 2011,
+    "pages": 636,
+    "isbn": "978-5-9963-0449-3"
+  },
+  {
+    "id": "gost732",
+    "type": "standard",
+    "number": "ГОСТ 7.32-2017",
+    "title": "Система стандартов по информации, библиотечному и издательскому делу. Отчет о научно-исследовательской работе. Структура и правила оформления",
+    "kind": "межгос. стандарт",
+    "city": "Москва",
+    "publisher": "Стандартинформ",
+    "year": 2017,
+    "pages": 32
+  },
+  {
+    "id": "numpy",
+    "type": "web",
+    "title": "NumPy documentation",
+    "kind": "офиц. сайт",
+    "url": "https://numpy.org/doc/",
+    "accessed": "02.11.2026"
+  },
+  {
+    "id": "lutz",
+    "type": "book",
+    "authors": [
+      "Lutz M."
+    ],
+    "title": "Learning Python",
+    "edition": "5th ed.",
+    "city": "Sebastopol",
+    "publisher": "O'Reilly Media",
+    "year": 2013,
+    "pages": 1594
+  }
+]
